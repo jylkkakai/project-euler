@@ -1,2 +1,2 @@
 # project-euler
-[Advent of code](https://projecteuler.net/)
+[Project Euler](https://projecteuler.net/)
