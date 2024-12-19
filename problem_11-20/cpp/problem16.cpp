@@ -11,10 +11,7 @@ int main() {
 
   int sum_digits = 0;
   for (size_t i = 0; i < sum.length(); i++) {
-    // std::cout << sum[i] - 48;
     sum_digits += sum[i] - 48;
   }
-  // std::cout << "\n";
-  // std::cout << sum.length() << "\n";
   std::cout << sum_digits << "\n";
 }
