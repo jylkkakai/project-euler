@@ -1,4 +1,4 @@
-#include "utils.h"
+#include "utils.cpp"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -6,7 +6,6 @@
 int main() {
 
   std::string res = "1";
-  // std::string ans = "0";
   int ans = 0;
   for (int i = 1; i < 100; i++) {
     std::string temp = res;

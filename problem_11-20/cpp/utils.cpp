@@ -58,7 +58,6 @@ std::string str_add(std::string str1, std::string str2) {
     a[ai] = std::to_string(sum % 10)[0];
     carry = sum / 10;
     if (ai == 0 && carry != 0) {
-      std::cout << carry << std::endl;
       a.insert(0, std::to_string(carry));
       carry = 0;
     }
