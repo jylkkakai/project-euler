@@ -1,4 +1,5 @@
 #pragma once
+#include <cmath>
 #include <cstddef>
 #include <iostream>
 #include <string>
@@ -70,8 +71,22 @@ std::string str_add(std::string str1, std::string str2) {
 std::vector<int> get_divisors(int x) {
   std::vector<int> divisors;
   for (size_t i = 1; i <= x / 2; i++) {
-    if (x % i == 0)
+    if (x % i == 0) {
       divisors.push_back(i);
+    }
   }
   return divisors;
+}
+
+int sum_divisors(int x) {
+  if (x == 0)
+    return 0;
+  int sum = 1;
+  for (size_t i = 2; i <= x / 2; i++) {
+    if (x % i == 0) {
+      sum += i;
+    }
+  }
+
+  return sum;
 }
